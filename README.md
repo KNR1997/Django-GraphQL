@@ -1,6 +1,6 @@
 # Django GraphQL Project
 
-This project is a backend application built using Django and GraphQL. It provides a flexible and efficient API interface, enabling users to query and manipulate data with precision.
+This project is a backend application built for an ecommerce application using Django and GraphQL. It provides a flexible and efficient API interface, enabling users to query and manipulate data with precision.
 
 ## Features
 
@@ -13,13 +13,6 @@ This project is a backend application built using Django and GraphQL. It provide
 
 ## Getting Started
 
-### Prerequisites
-
-- **Python 3.8+**
-- **Django 4.0+**
-- **pipenv** (or `virtualenv` for managing dependencies)
-- **PostgreSQL** (Optional but recommended)
-
 ### Installation
 
 1. Clone the repository:
@@ -27,3 +20,22 @@ This project is a backend application built using Django and GraphQL. It provide
    ```bash
    git clone https://github.com/KNR1997/Django-GraphQL.git
    cd Django-GraphQL
+
+2. Setup a virtual environment:
+   ```bash
+   pip install virtualenv
+   virtualenv venv
+
+3. Activate the virtual environment and install requirements:
+   ```bash
+   venv\scripts\activate
+   pip install -r requirements.txt
+   
+4. Make database migrations
+   ```bash
+   python manage.py makemigrations
+   python manage.py migrate
+
+5. Run application
+   ```bash
+   python manage.py runserver
